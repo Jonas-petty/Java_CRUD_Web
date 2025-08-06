@@ -26,7 +26,7 @@
                     </p:selectOneMenu>
                 </h:panelGrid>
 
-                <p:commandButton value="Save" action="#{personBean.save}" update="form table messages" icon="pi pi-save" />
+                <p:commandButton value="Save" action="#{personBean.save}" update="form:table form:messages" icon="pi pi-save" />
         </p:panel>
 
         <p:panel header="Lista de Pessoas">
@@ -45,8 +45,8 @@
                 </p:column>
 
                 <p:column headerText="Actions">
-                    <p:commandButton icon="pi pi-pencil" update="form" action="#{personBean.edit(p)}" title="Edit" />
-                    <p:commandButton icon="pi pi-trash" update="form table messages" action="#{personBean.delete(p)}"
+                    <p:commandButton icon="pi pi-pencil" update="@form" action="#{personBean.edit(p)}" title="Edit" />
+                    <p:commandButton icon="pi pi-trash" update="form:table form:messages" action="#{personBean.delete(p)}"
                                      title="Delete" styleClass="p-button-danger" />
                 </p:column>
             </p:dataTable>
