@@ -4,13 +4,14 @@ import com.project.dao.PersonDAO;
 import com.project.entity.Person;
 import jakarta.ejb.EJB;
 import jakarta.ejb.Stateless;
+import jakarta.inject.Inject;
 
 import java.util.List;
 
 @Stateless
 public class PersonService {
 
-    @EJB
+    @Inject
     private PersonDAO personDAO;
 
     public void save(Person person) {

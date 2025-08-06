@@ -5,6 +5,7 @@ import com.project.entity.Person;
 import com.project.service.PersonService;
 import jakarta.ejb.EJB;
 import jakarta.faces.view.ViewScoped;
+import jakarta.inject.Inject;
 import jakarta.inject.Named;
 
 import java.io.Serializable;
@@ -14,7 +15,7 @@ import java.util.List;
 @ViewScoped
 public class PersonBean implements Serializable {
 
-    @EJB
+    @Inject
     private PersonService personService;
 
     private Person person = new Person();
