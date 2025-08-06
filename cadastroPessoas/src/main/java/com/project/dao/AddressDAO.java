@@ -3,8 +3,8 @@ package com.project.dao;
 import com.project.entity.Address;
 import jakarta.ejb.Stateless;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 
 @Stateless
 public class AddressDAO {

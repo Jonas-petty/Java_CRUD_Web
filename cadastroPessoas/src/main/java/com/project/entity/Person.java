@@ -2,7 +2,7 @@ package com.project.entity;
 
 import com.project.common.Sex;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
