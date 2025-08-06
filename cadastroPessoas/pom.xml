@@ -37,13 +37,12 @@
             <version>5.6.15.Final</version>
         </dependency>
 
-        <!-- PosgreSQL -->
+        <!-- PostgreSQL -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.6.0</version>
         </dependency>
-
 
         <!-- JUnit -->
         <dependency>
@@ -51,6 +50,14 @@
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
             <scope>test</scope>
+        </dependency>
+
+        <!-- Jakarta EJB -->
+        <dependency>
+            <groupId>jakarta.ejb</groupId>
+            <artifactId>jakarta.ejb-api</artifactId>
+            <version>4.0.0</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
